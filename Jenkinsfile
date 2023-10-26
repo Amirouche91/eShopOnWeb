@@ -11,13 +11,13 @@ pipeline {
       parallel {
         stage('Unit') {
           steps {
-            sh 'dotnet Test tests/UnitTests'
+            sh 'dotnet test tests/UnitTests'
           }
         }
 
         stage('Integration') {
           steps {
-            sh 'dotnet test Tests/IntegrationTests'
+            sh 'dotnet test tests/IntegrationTests'
           }
         }
 
