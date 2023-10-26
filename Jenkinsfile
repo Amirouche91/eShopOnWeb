@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''dotnet build C:\\\\ProgramData\\\\Jenkins\\\\.jenkins\\\\workspace\\\\eShopOnWeb_build_jenkins\\\\eShopOnWeb.sln
+        sh '''dotnet build "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\eShopOnWeb_build_jenkins\\eShopOnWeb.sln"
 '''
       }
     }
